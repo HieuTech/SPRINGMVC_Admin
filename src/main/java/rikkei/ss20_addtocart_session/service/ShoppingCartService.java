@@ -2,6 +2,7 @@ package rikkei.ss20_addtocart_session.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import rikkei.ss20_addtocart_session.dao.ProductDao;
 import rikkei.ss20_addtocart_session.dao.ShoppingCartDao;
 import rikkei.ss20_addtocart_session.dto.request.ShoppingCartRequest;
 import rikkei.ss20_addtocart_session.dto.response.ShoppingCartResponse;
@@ -20,7 +21,8 @@ public class ShoppingCartService {
     @Autowired
     private ShoppingCartDao shoppingCartDao;
 
-
+    @Autowired
+    private ProductDao productDao;
 
     public void saveCart(ShoppingCartRequest request){
         ShoppingCart shoppingCart = new ShoppingCart(request.getId(), request.getUserId(), request.getProductId(), request.getQuantity());
