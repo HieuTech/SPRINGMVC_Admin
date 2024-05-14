@@ -1,0 +1,14 @@
+
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Õ’®‰÷1J$02943a39-e456-486a-9d35-6c9379c76bb3
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Õ’®‰÷1J$7ab830ac-a5eb-49cf-8230-d9349da5ee66
+Š
+java:S2441"BMake "UserResponse" serializable or don't store it in the session.(Ø‚˜Œüÿÿÿÿ8¿Ë¼‹÷1J$3d137a90-d11b-4097-adc3-00a74917f1fc
+y
+java:S1128"6Remove this unused import 'lombok.extern.slf4j.Slf4j'.(ûúÄ®8¿Ë¼‹÷1J$09e230ff-a13b-4408-b956-7c0c01204277
+v
+java:S1128	"TRemove this unused import 'rikkei.ss20_addtocart_session.dto.response.UserResponse'.(éäŞøÿÿÿÿ8½–é‹÷1
+Š
+java:S1128
+"GRemove this unused import 'rikkei.ss20_addtocart_session.models.Users'.(¨ØõŸ8¿Ë¼‹÷1J$c6969fe3-2c0d-4d3e-bbc7-d9428c794747

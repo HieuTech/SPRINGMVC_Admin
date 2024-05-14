@@ -1,0 +1,15 @@
+
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ƒ¡©‹÷1J$7ca830dc-2f3a-4795-ab98-eb0e69331f9f
+y
+java:S1128"6Remove this unused import 'lombok.extern.slf4j.Slf4j'.(ûúÄ®8²ì‹÷1J$8cb83f9f-ba43-4774-afe8-1ad3c128f8a0
+
+java:S1128"9Remove this unused import 'org.springframework.ui.Model'.(ê†ıÿÿÿÿ8°áù‹÷1J$9eae5ca2-b059-4f0d-916f-340afd9c8009
+„
+java:S1128"<Remove this unused import 'org.springframework.ui.ModelMap'.(ÊÁâºùÿÿÿÿ8²ì‹÷1J$2e42d171-2bdc-42c9-9242-b7ac7c5c87f7
+œ
+java:S1128"TRemove this unused import 'rikkei.ss20_addtocart_session.dto.response.UserResponse'.(éäŞøÿÿÿÿ8É†ö‹÷1J$2560a048-6417-4471-b1d0-a81ff7aae831
+Š
+java:S1128"GRemove this unused import 'rikkei.ss20_addtocart_session.models.Users'.(¨ØõŸ8²ì‹÷1J$d41ae724-7093-4c69-b4c0-9bbdc3a10913
+~
+java:S1128";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô8²ì‹÷1J$608422ad-19c3-478f-8fb7-f45c2cc75152

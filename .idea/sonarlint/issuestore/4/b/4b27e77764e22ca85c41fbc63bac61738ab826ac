@@ -1,0 +1,11 @@
+
+—
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ì¾‡ııÿÿÿÿ8†é„‹÷1J$caefd405-62cd-4a44-beeb-609efd1fd038
+—
+java:S2095."OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ˆ¶…Ñûÿÿÿÿ8…é„‹÷1J$0d7f990e-96c0-46ca-8c69-408c90786503
+g
+java:S6905."Don't use the query "SELECT *".(ˆ¶…Ñûÿÿÿÿ8µÿû‰÷1J$32ea272a-11c9-4ebe-b9fb-e6ce5a233e0a
+Š
+java:S1128"GRemove this unused import 'rikkei.ss20_addtocart_session.models.Users'.(¨ØõŸ8”é„‹÷1J$0b64c7a3-506c-4d16-9131-4689a73967ac
+~
+java:S1128";Remove this unused import 'javax.servlet.http.HttpSession'.(í¨ô8•é„‹÷1J$cf4642b5-19e5-4845-855b-5f8b2ff1a35d
