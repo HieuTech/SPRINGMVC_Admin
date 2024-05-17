@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="text-center">
+
+    <ul class="cart-list"
+        style="display: flex; justify-content: center; align-items: center; list-style: none; margin: 10px">
+        <li th:each="cart,index : ${cartList}" class="cart-item">
+            <p th:text="${cart.getProductName()}"></p>
+            <p th:text="${cart.getProductPrice()}"></p>
+            <img th:src="@{/${cart.getProductImg()}}" alt="#" style="width: 70px;">
+            <a th:href="@{/Cart/plus/{id}(id=${cart.getProductId()})}" ><i class="bi bi-plus"
+                                                          style="font-size: 30px; color: green"></i>
+            </a>
+            <p th:text="${cart.getQuantity()}"></p>
+
+            <a th:href="@{/Cart/minus/{id}(id=${cart.getProductId()})}"><i class="bi bi-dash"
+                                                           style="font-size: 30px; color: red"></i>
+            </a>
+        </li>
+
+
+    </ul>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

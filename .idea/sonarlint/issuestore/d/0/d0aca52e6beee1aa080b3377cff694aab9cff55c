@@ -1,5 +1,5 @@
 
-k
-java:S1128"#Remove this unused import 'lombok'.(â—‡‘þÿÿÿÿ8‰±üŠ÷1J$a987f298-87f9-41ae-a0c8-c74dfab61444
 
-java:S1128">Remove this unused import 'lombok.experimental.FieldDefaults'.(õÂÀ½8‰±üŠ÷1J$760232ec-008b-4a80-b7b0-56b20bb0a340
+java:S1128"9Remove this unused import 'com.google.protobuf.Internal'.(„ÂÀÇþÿÿÿÿ8–”Ç«ø1J$f029d7e7-2161-4200-abed-7f1fc5c74289
+’
+java:S1128"JRemove this unused import 'rikkei.ss20_addtocart_session.entity.Category'.(Í©¾Ùÿÿÿÿÿ8Ýžú«ø1J$b7576e34-b222-4db1-97dd-dc2503add14f

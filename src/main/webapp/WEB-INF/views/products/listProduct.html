@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/header.css}">
+
+</head>
+<body>
+<header th:replace="/layout/header::header">
+</header>
+<h1 class="alert alert-primary"> Product List</h1>
+<table class="table table-danger even-row-color">
+    <thead>
+    <tr class="text-center table-sub-heading-color">
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Category Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Stock</th>
+        <th scope="col">Image</th>
+        <th scope="col">Status</th>
+        <th scope="col" colspan="4">Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="product,index : ${productList}" class="text-center">
+        <th scope="row" th:text="${index.count}" ></th>
+        <td th:text="${product.name}"></td>
+        <td th:text="  ${product.category.getCategoryName()}"></td>
+        <td th:text="  ${product.price}"></td>
+        <td th:text="  ${product.stock}"></td>
+        <td><img th:src="@{'/uploads/'+${product.image}}"  alt="img" style="width: 100px"></td>
+        <td th:text='${product.status?"Active":"Inactive"}'></td>
+        <td><a th:href="@{/Products/add}" class="btn btn-info">Thêm mới</a></td>
+        <td><a th:href="@{/Products/edit/{id}(id=${product.getId()})}" href="/Products/edit/${product.id}"
+               class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
+        </td>
+        <td><a th:href="@{/Cart/add/{productId}(productId=${product.getId()})}"><i class="bi bi-cart-fill"
+                                                            style="font-size: 30px; color: orange"></i>
+        </a>
+        </td>
+        <td><a th:href="@{/Products/delete/{productId}(productId=${product.getId()})}" class="btn btn-danger"><i class="bi bi-trash"></i></a></td>
+    </tr>
+
+    </tbody>
+</table>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

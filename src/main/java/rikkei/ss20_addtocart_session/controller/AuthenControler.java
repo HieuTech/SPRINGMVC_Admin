@@ -1,50 +1,70 @@
 package rikkei.ss20_addtocart_session.controller;
 
-import lombok.extern.slf4j.Slf4j;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import rikkei.ss20_addtocart_session.dto.request.AuthenRequest;
 import rikkei.ss20_addtocart_session.dto.response.UserResponse;
-import rikkei.ss20_addtocart_session.models.Users;
-import rikkei.ss20_addtocart_session.service.AuthenService;
+import rikkei.ss20_addtocart_session.service.AuthenServiceHibernate;
+import rikkei.ss20_addtocart_session.service.ProductServiceHibernate;
+import rikkei.ss20_addtocart_session.service.UserServiceHibernate;
 
 import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/authen")
 
 public class AuthenControler {
     @Autowired
-    private AuthenService authenService;
+    private AuthenServiceHibernate authenService;
+
+    @Autowired
+    private ProductServiceHibernate productService;
+    @Autowired
+    private HttpSession session;
+
+    @GetMapping("/logout")
+    public String logout() {
+        this.authenService.logout();
+        return "redirect:/authen/login";
+    }
 
     @PostMapping("/register")
-    public String registerUser(@ModelAttribute() AuthenRequest request) {
+    public String registerUser(@ModelAttribute("AuthenRequest") @Valid AuthenRequest request,
+                               BindingResult bindingResult, Model model) {
 
-        if (authenService.register(request)) {
-            return "redirect:/authen/login";
+        if (bindingResult.hasErrors()) {
+            return "authen/register";
+        } else if (!authenService.register(request)) {
+            model.addAttribute("registrationError", "Email Is Exist.");
+            return "authen/register";
         } else {
-            return "redirect:/NotFound";
+            return "redirect:/authen/login";
+
         }
+
+
     }
 
     @GetMapping("/register")
-    public String register() {
+    public String register(Model model) {
+        model.addAttribute("AuthenRequest", new AuthenRequest());
         return "authen/register";
     }
 
     @PostMapping("/login")
-    public String login(@ModelAttribute() AuthenRequest request) {
+    public String login(@ModelAttribute() AuthenRequest request, Model model) {
 
         if (this.authenService.login(request).isStatusAuthen()) {
-
-
+            model.addAttribute("productList", this.productService.findAll());
             return "redirect:/Products";
         } else {
             return "redirect:/authen/login";
@@ -52,7 +72,9 @@ public class AuthenControler {
     }
 
     @GetMapping("/login")
-    public String toLoginPage() {
+    public String toLoginPage(Model model) {
+
+        model.addAttribute("AuthenRequest", new AuthenRequest());
         return "authen/login";
     }
 }

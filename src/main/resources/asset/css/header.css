@@ -1,0 +1,30 @@
+.favicon-image{
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: azure;
+    color: cornflowerblue;
+}
+.nav-list{
+    font-size: 23px;
+    color: burlywood;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    li{
+        margin:0 20px;
+    }
+}
+
+.header-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

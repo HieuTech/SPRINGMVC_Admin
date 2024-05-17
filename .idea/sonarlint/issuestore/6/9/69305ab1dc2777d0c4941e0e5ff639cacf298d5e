@@ -1,0 +1,19 @@
+
+Ÿ
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "list".(È®Ì³8ø¬Œø1J$253484f2-2bd9-458c-bf55-a0bd20fc026c
+§
+java:S1488r"dImmediately return this expression instead of assigning it to the temporary variable "productsList".(Û„ä–8ù¬Œø1J$d150b2eb-c4cc-4a4f-bee0-ef59fac6968c
+
+java:S2095I"EUse try-with-resources or close this "Session" in a "finally" clause.(´Ï‚‘ùÿÿÿÿ8¿ŸŒø1J$bc8ef0e4-ab23-408b-9a41-a3e1739dbe0b
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8†­Œø1J$4a64194c-1521-4e6d-9ef0-021385bc9567
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8†­Œø1J$a5291596-a40b-4d2e-86bb-58847e558071
+n
+java:S1168""+Return an empty collection instead of null.(¥¹ï8ˆ­Œø1J$640e9357-6a0c-4404-9361-17c2d29a586d
+n
+java:S1168|"+Return an empty collection instead of null.(¥¹ï8­Œø1J$3105fcbb-d66a-44df-93c6-92c2e290f355
+r
+java:S1128"URemove this unused import 'rikkei.ss20_addtocart_session.dto.request.ProductRequest'.(ÆÖü†8ë“Ü¦ø1
+V
+java:S1128"9Remove this unused import 'javax.persistence.TypedQuery'.(—Ğİ¦8ë“Ü¦ø1

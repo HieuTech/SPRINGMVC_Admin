@@ -1,9 +1,18 @@
 
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8‹‚—‹÷1J$316e1b42-6af9-4f20-b136-107f36268c88
-q
-java:S6856".Bind path variable "id" to a method parameter.(û×ñ‘8Œ‚—‹÷1J$fbf75f7e-af5f-4389-b7ca-ef6a84c2117a
+–
+java:S1192V"SDefine a constant instead of duplicating this literal "redirect:/Products" 3 times.(©€ö¾8”Îá®ø1J$57713c11-dd1b-44c6-8db8-17ba3ef0c3b8
+n
+java:S1075M"&Remove this hard-coded path-delimiter.(¤…ÀÈüÿÿÿÿ8£Îá®ø1J$e7c98651-de47-4b8c-8472-c4bf5bca3ab9
+n
+java:S1075x"&Remove this hard-coded path-delimiter.(¤…ÀÈüÿÿÿÿ8¦Îá®ø1J$4a46f839-8078-464b-843b-9a6009de3795
+~	java:S125†"<This block of commented-out lines of code should be removed.(¼öÍ=8§Îá®ø1J$28ef10db-3aa3-40d8-945c-561868e33eda
+z
+java:S1128"XRemove this unused import 'rikkei.ss20_addtocart_session.dao.impl.CategoryDaoHibernate'.(ï¹Ó¨şÿÿÿÿ8²“ã®ø1
+t
+java:S1128"WRemove this unused import 'rikkei.ss20_addtocart_session.dto.response.ProductResponse'.(°éò8²“ã®ø1
+l
+java:S1128"JRemove this unused import 'rikkei.ss20_addtocart_session.entity.Products'.( ¹÷ıÿÿÿÿ8²“ã®ø1
 v
-java:S6856"".Bind path variable "id" to a method parameter.(’÷şìüÿÿÿÿ8Œ‚—‹÷1J$c6667263-dc63-4352-98f9-5506116788ba
-
-java:S1128"VRemove this unused import 'rikkei.ss20_addtocart_session.dto.response.AuthenResponse'.(—ÿˆÙøÿÿÿÿ8Ô¼‹÷1J$5aafc90e-f384-4128-af5e-e749b283766f
+java:S1128"YRemove this unused import 'rikkei.ss20_addtocart_session.service.AuthenServiceHibernate'.(ßñ¾8²“ã®ø1
+]
+java:S1128";Remove this unused import 'javax.servlet.http.HttpServlet'.(û÷Å›ÿÿÿÿÿ8²“ã®ø1

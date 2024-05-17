@@ -1,0 +1,9 @@
+
+Ÿ
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "list".(—šÆã8ü‰—İ÷1J$4f115213-210b-48a1-b147-d4b368d93f4b
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ƒŠ—İ÷1J$c81d3270-8b7f-4b34-bb71-1dece9775a17
+n
+java:S1168"+Return an empty collection instead of null.(¥¹ï8¾Û¼Šø1J$c763ca5a-e20f-46ad-9545-2275ba0cd57c
+›
+java:S1128"XRemove this unused import 'rikkei.ss20_addtocart_session.dto.response.CategoryResponse'.(×«—§8¿Û¼Šø1J$e34a89ff-bd49-445a-80fb-641ade6ab346

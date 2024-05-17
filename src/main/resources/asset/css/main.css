@@ -1,0 +1,13 @@
+body{
+    margin: 30px;
+    font-size: 16px;
+    font-family: AppleSystemUIFont, serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}

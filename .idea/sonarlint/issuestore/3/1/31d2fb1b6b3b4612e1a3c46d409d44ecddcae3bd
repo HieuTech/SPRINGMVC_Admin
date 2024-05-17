@@ -1,0 +1,13 @@
+
+­
+java:S1488"eImmediately return this expression instead of assigning it to the temporary variable "shoppingCarts".(¸õ—üüÿÿÿÿ8¾‚²Ü÷1J$baf72b5e-84cf-4508-b442-32904051ddf9
+|
+java:S3516;"9Refactor this method to not always return the same value.(Û²á›8Ê•ÛÜ÷1J$123f7772-f591-4786-9fce-1a376bcce7f6
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Å‚²Ü÷1J$6c8da29c-f22a-4b1d-b9b3-a3d916e81760
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Å‚²Ü÷1J$b994a958-6176-44f4-a07c-15dd9631b0ad
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Æ‚²Ü÷1J$e45db01c-9041-4a2f-8033-5d93833cc544
+n
+java:S1168#"+Return an empty collection instead of null.(¥¹ï8Í•ÛÜ÷1J$a7e13160-19fe-481a-9f02-3e86e89b7283

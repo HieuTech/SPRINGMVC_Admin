@@ -1,84 +1,43 @@
 package rikkei.ss20_addtocart_session.dto.request;
 
+
+import com.google.protobuf.Internal;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
+import org.springframework.web.multipart.MultipartFile;
+import rikkei.ss20_addtocart_session.entity.Category;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Positive;
 
+@Getter
+@Builder
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
 public class ProductRequest {
-  private Integer id;
-  private String name;
-  private Integer categoryId;
-  private Double price;
-  private Integer stock;
-  private Boolean status;
-  private String image;
 
-    public ProductRequest() {
-    }
+  Integer id;
+  @NotNull(message = "Product Name Is Empty!")
 
-    public ProductRequest(Integer id, String name, Integer categoryId, Double price, Integer stock, Boolean status, String image) {
-        this.id = id;
-        this.name = name;
-        this.categoryId = categoryId;
-        this.price = price;
-        this.stock = stock;
-        this.status = status;
-        this.image = image;
-    }
+  String name;
 
-    public Integer getId() {
-        return id;
-    }
+  @NotNull(message = "Category Is Empty")
+  Integer categoryId;
 
-    public void setId(Integer id) {
-        this.id = id;
-    }
+  @NotNull(message = "Product Price Is Empty!")
+  @Positive(message = "Price must greater than 0")
+  Double price;
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  @NotNull(message = "Stock Is Empty")
+  @Positive(message = "Stock must greater than 0")
+  Integer stock;
 
-    public Integer getCategoryId() {
-        return categoryId;
-    }
+  Boolean status;
 
-    public void setCategoryId(Integer categoryId) {
-        this.categoryId = categoryId;
-    }
+  MultipartFile file;
 
-    public Double getPrice() {
-        return price;
-    }
 
-    public void setPrice(Double price) {
-        this.price = price;
-    }
-
-    public Integer getStock() {
-        return stock;
-    }
-
-    public void setStock(Integer stock) {
-        this.stock = stock;
-    }
-
-    public Boolean getStatus() {
-        return status;
-    }
-
-    public void setStatus(Boolean status) {
-        this.status = status;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
 }
